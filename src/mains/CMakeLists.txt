@@ -48,6 +48,10 @@ ecbuild_add_executable( TARGET  ${PROJECT_NAME}_variational.x
                         SOURCES mpasVariational.cc
                         LIBS    ${PROJECT_NAME} saber )
 
+ecbuild_add_executable( TARGET  ${PROJECT_NAME}_quadrature_update.x
+                        SOURCES mpasQuadratureUpdate.cc
+                        LIBS    ${PROJECT_NAME} saber )
+
 ecbuild_add_executable( TARGET  ${PROJECT_NAME}_convertstate.x
                         SOURCES mpasConvertState.cc
                         LIBS    ${PROJECT_NAME} saber )
